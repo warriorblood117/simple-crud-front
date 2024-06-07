@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 10px auto; /* Margen en los lados izquierdo y derecho y auto en la parte superior e inferior para centrar verticalmente */
+    width: 80%;
+    height: auto;
+    padding: 10px; /* Ajusta el relleno según sea necesario */
+}

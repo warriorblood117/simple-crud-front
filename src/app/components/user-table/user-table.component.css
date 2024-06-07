@@ -1,0 +1,104 @@
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilos para las celdas de la tabla */
+th,
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Estilos para el encabezado de la tabla */
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para las filas impares de la tabla */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Estilos para las filas al pasar el mouse */
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+
+/* Estilo para la lista ordenada */
+ul {
+    list-style-type: none;
+    /* Quita los marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para cada elemento de la lista */
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    /* Línea divisoria entre elementos */
+}
+
+/* Estilo para el último elemento de la lista (quitar la línea divisoria) */
+li:last-child {
+    border-bottom: none;
+}
+
+/* Estilo al pasar el ratón por encima de los elementos de la lista */
+li:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilo para el título del post */
+li strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para el contenido del post */
+li span {
+    color: #666;
+}
+
+/*botones*/
+
+.button {
+    width: 60px;
+    height: 30px;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s ease
+}
+
+.button:active {
+    transform: scale(0.95);
+    /* Efecto de "presionar" el botón */
+}
+
+
+.edit-button {
+
+    background-color: #008CBA;
+    color: #fff;
+    margin: 10px;
+
+}
+
+.detail-button {
+    background-color: darkkhaki;
+    color: #fff;
+    margin: 10px;
+}
+
+.delete-button {
+    background-color: saddlebrown;
+    color: #fff;
+    margin: 10px;
+}
