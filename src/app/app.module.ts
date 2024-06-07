@@ -8,13 +8,15 @@ import { ModalComponent } from './components/modal/modal.component';
 import { RouterModule} from '@angular/router';
 import { AppRoutingModule } from './app-routing.module.';
 import { MenuComponent } from './components/menu/menu.component';
+import { CreateUserComponent } from './components/create-user/create-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserTableComponent,
     ModalComponent,
-    MenuComponent
+    MenuComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
