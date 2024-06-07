@@ -9,6 +9,8 @@ import { RouterModule} from '@angular/router';
 import { AppRoutingModule } from './app-routing.module.';
 import { MenuComponent } from './components/menu/menu.component';
 import { CreateUserComponent } from './components/create-user/create-user.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { UpdateUserComponent } from './components/update-user/update-user.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +18,14 @@ import { CreateUserComponent } from './components/create-user/create-user.compon
     UserTableComponent,
     ModalComponent,
     MenuComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    UpdateUserComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
