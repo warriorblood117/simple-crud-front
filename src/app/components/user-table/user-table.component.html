@@ -13,7 +13,7 @@
       <td>
         <button type="button" class="button detail-button" (click)="showDetails(user)">Detalles</button>
         <button type="button" class="button edit-button" [routerLink]="['/update-user', user.id]">Editar</button>
-        <button type="button" class="button delete-button">Eliminar</button>
+        <button type="button" class="button delete-button"(click)="deleteUser(user.id)">Eliminar</button>
       </td>
     </tr>
   </tbody>
@@ -24,7 +24,7 @@
     <h2>Detalles del Usuario</h2>
     <p><strong>Id:</strong> {{ selectedUser.id }}</p>
     <p><strong>Nombre:</strong> {{ selectedUser.name }}</p>
-    
+
     <h3>Posts:</h3>
     <table>
       <thead>

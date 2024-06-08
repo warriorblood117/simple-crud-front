@@ -12,7 +12,7 @@ export class UserTableComponent implements OnInit {
   isModalOpen = false;
   selectedUser?: User;
 
-  constructor(private userService: UserService) {}
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
     this.userService.get().subscribe({
@@ -34,4 +34,24 @@ export class UserTableComponent implements OnInit {
     this.isModalOpen = false;
     this.selectedUser = undefined;
   }
+
+  deleteUser(id: number) {
+    this.userService.deleteUser(id).subscribe({
+      next: () => {
+        // Actualizar la lista de usuarios después de eliminar el usuario
+        this.userService.get().subscribe({
+          next: (listUsers: User[]) => {
+            this.users = listUsers;
+          },
+          error: (err) => {
+            console.error(err);
+          }
+        });
+      },
+      error: (err) => {
+        console.error('Error deleting user', err);
+      }
+    });
+  }
+
 }

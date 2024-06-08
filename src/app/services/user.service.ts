@@ -27,4 +27,12 @@ export class UserService {
   findUserById(id:number){
     return this.http.get<User>(`${this.url}/find-user/${id}`);
   }
+
+  deletePost(id:number){
+    return this.http.delete<User>(`${this.url}/delete-post/${id}`);
+  }
+
+  deleteUser(id:number){
+    return this.http.delete<User>(`${this.url}/delete-user/${id}`)
+  }
 }
